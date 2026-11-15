@@ -1,0 +1,240 @@
+{
+  "id": "timun-mas",
+  "judul": "Timun Mas",
+  "asal": "Jawa",
+  "pengantar": "Seorang gadis pemberani lari dari raksasa Buto Ijo, berbekal empat bungkusan ajaib dari orang tuanya.",
+  "pesanMoral": "Keberanian, kemandirian, dan kecerdikan mengalahkan kekuatan yang jauh lebih besar; jangan membuat janji dengan yang jahat.",
+  "sumber": [
+    { "nama": "Wikipedia (ID) — Timun Mas", "url": "https://id.wikipedia.org/wiki/Timun_Mas" }
+  ],
+  "variasiDipakai": "Versi Wikipedia ID: sepasang suami-istri petani tua; raksasa Buto Ijo memberi biji mentimun ajaib dengan syarat anak diserahkan saat berusia 17 tahun; mentimun emas berisi bayi perempuan; empat bekal dari orang tua: biji mentimun, jarum, garam, terasi. TIDAK dipakai: versi janda Mbok Sarni, versi usia serah 6 tahun (lalu ditunda) atau 16 tahun, dan versi raksasa Ki Butakala.",
+  "mulaiDari": "timun:01",
+  "adegan": [
+    {
+      "id": "timun:01",
+      "suasana": "desa",
+      "teks": "Di sebuah desa di Jawa, sepasang petani tua hidup sederhana. Satu keinginan mengisi hati mereka setiap malam: seorang anak. Suatu senja, sesosok raksasa hijau besar bernama Buto Ijo muncul di pematang. 'Aku bisa memberimu seorang anak,' ujarnya, menyodorkan bungkus daun berisi biji mentimun. 'Tapi saat ia berusia tujuh belas tahun, serahkan ia padaku untuk kumakan.' Suara raksasa itu berat seperti batu. Sang istri menggengam tangan suaminya.",
+      "pilihan": [
+        {
+          "teks": "Menerima biji itu dan berjanji demi mendapatkan anak.",
+          "ke": "timun:02",
+          "skor": { "berani": 1 }
+        },
+        {
+          "teks": "Menolak syarat keji itu dan mencari cara lain.",
+          "ke": "timun:12",
+          "skor": { "bijak": 2 }
+        }
+      ]
+    },
+    {
+      "id": "timun:02",
+      "suasana": "desa",
+      "teks": "Biji mentimun itu ditanam di pekarangan. Sang petani merawatnya setiap pagi, menyirami dengan air sumur, membersihkan gulma di sekelilingnya. Berminggu-minggu berlalu. Lalu muncullah satu buah mentimun yang berbeda dari yang lain — besar, lonjong, dan berkilau seperti emas di bawah sinar matahari. Orang-orang desa yang lewat berhenti memandanginya dengan takjub. Sang istri berlutut di dekatnya setiap sore, berbisik lembut kepada buah itu.",
+      "pilihan": [
+        {
+          "teks": "Merawat mentimun itu dengan penuh kasih dan doa.",
+          "ke": "timun:03",
+          "skor": { "bakti": 1 }
+        },
+        {
+          "teks": "Menunggu dengan sabar tanpa terlalu banyak berharap.",
+          "ke": "timun:03",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:03",
+      "suasana": "desa",
+      "teks": "Suatu pagi mentimun emas itu pecah dengan sendirinya, pelan dan tak bersuara. Di dalamnya terbaring seorang bayi perempuan yang cantik jelita, tersenyum dalam tidurnya. Kulitnya bersih, rambutnya hitam lebat. Sang istri menangis dan memeluk bayi itu erat-erat. Sang suami berdiri dengan mata berkaca-kaca, tidak percaya doanya terkabul. Mereka harus memberikan nama.",
+      "pilihan": [
+        {
+          "teks": "Menamakannya Timun Mas — emas yang lahir dari mentimun.",
+          "ke": "timun:04",
+          "skor": { "bijak": 1 }
+        },
+        {
+          "teks": "Menamakannya Timun Mas setelah berdoa semalam suntuk.",
+          "ke": "timun:04",
+          "skor": { "bakti": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:04",
+      "suasana": "desa",
+      "teks": "Timun Mas tumbuh menjadi gadis yang ceria, kuat, dan rajin membantu di ladang. Orang tuanya menyayanginya melebihi segalanya. Namun bayang-bayang janji itu tidak pernah pergi. Ketika Timun Mas berumur enam belas tahun, sang ayah mulai gelisah. Ada sesuatu yang harus diceritakan kepada putrinya sebelum waktu habis.",
+      "pilihan": [
+        {
+          "teks": "Ayah menceritakan janji dengan Buto Ijo sebelum ulang tahun ketujuh belas.",
+          "ke": "timun:05",
+          "skor": { "bakti": 2 }
+        },
+        {
+          "teks": "Timun Mas mendengar percakapan rahasia orang tuanya dan tahu sendiri.",
+          "ke": "timun:05",
+          "skor": { "berani": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:05",
+      "suasana": "desa",
+      "teks": "Hari ulang tahun ketujuh belas tiba. Langit mendadak gelap meski belum sore. Tanah bergetar. Buto Ijo datang menagih janji, suaranya menggelegar seperti guntur. Sang ayah gemetar, tetapi ia sudah mempersiapkan sesuatu. Ia menyerahkan empat bungkusan kecil kepada Timun Mas: biji mentimun, jarum, garam, dan terasi. 'Lempar ini satu per satu bila raksasa mendekat,' bisiknya. 'Larilah, Nak. Jangan berhenti.'",
+      "pilihan": [
+        {
+          "teks": "Timun Mas mengambil bekal itu dan segera berlari sekencang-kencangnya.",
+          "ke": "timun:06",
+          "skor": { "berani": 2 }
+        },
+        {
+          "teks": "Timun Mas berdiri diam, tidak sanggup meninggalkan orang tuanya.",
+          "ke": "timun:11",
+          "skor": { "bakti": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:06",
+      "suasana": "hutan",
+      "teks": "Timun Mas berlari masuk ke hutan. Langkahnya ringan tetapi derap kaki Buto Ijo menggetarkan tanah di belakangnya. Pepohonan bergetar setiap kali raksasa itu melangkah. Napas panas Buto Ijo terasa di tengkuk Timun Mas. Tangannya menggenggam empat bungkusan kecil pemberian ayahnya. Di depan ada dua jalan: satu terbuka lebar, satu sempit dan gelap.",
+      "pilihan": [
+        {
+          "teks": "Melempar bungkusan biji mentimun ke belakang untuk menghambat raksasa.",
+          "ke": "timun:07",
+          "skor": { "bijak": 2 }
+        },
+        {
+          "teks": "Bersembunyi di balik pohon besar dan menunggu raksasa berlalu.",
+          "ke": "timun:11",
+          "skor": { "berani": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:07",
+      "suasana": "hutan",
+      "teks": "Bungkusan pertama terlempar. Biji-biji mentimun berhamburan di tanah, dan dalam sekejap tumbuhlah sulur-sulur hijau yang lebat. Ladang mentimun raksasa meledak dari tanah, melilit kaki Buto Ijo, menjalar ke tubuhnya. Raksasa itu mengaum marah dan berjuang merobek sulur-sulur itu dengan tangannya yang besar. Timun Mas mendapatkan waktu. Kakinya terus melangkah.",
+      "pilihan": [
+        {
+          "teks": "Terus berlari sambil bersiap melempar bungkusan berikutnya.",
+          "ke": "timun:08",
+          "skor": { "berani": 1 }
+        },
+        {
+          "teks": "Berhenti sejenak untuk memastikan raksasa benar-benar terjebak.",
+          "ke": "timun:08",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:08",
+      "suasana": "hutan",
+      "teks": "Buto Ijo berhasil merobek sulur-sulur mentimun dan kembali berlari. Derap kakinya semakin dekat. Timun Mas meraih bungkusan kedua — jarum — dan melemparnya keras ke tanah di belakangnya. Dari tempat jarum jatuh, hutan bambu muncul tiba-tiba: rapat, tinggi, dan ujung-ujungnya setajam tombak. Buto Ijo menerobos masuk dan meraung kesakitan. Darahnya menetes di antara bambu-bambu itu. Namun ia tidak berhenti.",
+      "pilihan": [
+        {
+          "teks": "Terus berlari, menuju tempat yang lebih terbuka untuk melempar bekal berikutnya.",
+          "ke": "timun:09",
+          "skor": { "berani": 2 }
+        },
+        {
+          "teks": "Memanjat pohon tinggi untuk mengamati apakah raksasa masih datang.",
+          "ke": "timun:09",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:09",
+      "suasana": "lumpur",
+      "teks": "Hutan bambu tidak menghentikan Buto Ijo selamanya. Raksasa itu menerobos keluar dengan luka di sekujur kakinya, matanya merah penuh amarah. Timun Mas sudah sampai di tepi tanah berlumpur. Bungkusan ketiga — garam — ada di tangannya. Tanah basah di bawah kakinya mulai mengisap langkahnya. Ia harus melempar sekarang.",
+      "pilihan": [
+        {
+          "teks": "Melempar garam ke arah Buto Ijo yang mendekat.",
+          "ke": "timun:10",
+          "skor": { "berani": 2 }
+        },
+        {
+          "teks": "Mundur lebih jauh dulu sebelum melempar garam agar jarak aman.",
+          "ke": "timun:10",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:10",
+      "suasana": "lumpur",
+      "teks": "Garam menyentuh tanah — dan lautan muncul di antara Timun Mas dan Buto Ijo. Gelombang besar memecah tanah, membentang seluas mata memandang. Buto Ijo berenang melewatinya dengan susah payah, menderam penuh dendam. Di tangan Timun Mas tinggal satu bungkusan terakhir: terasi. Raksasa itu hampir sampai ke tepian. Timun Mas menggenggam bungkusan itu, mengambil napas dalam-dalam.",
+      "pilihan": [
+        {
+          "teks": "Melempar terasi dengan sekuat tenaga tepat di depan Buto Ijo.",
+          "ke": "akhir-lumpur",
+          "skor": { "berani": 3 }
+        },
+        {
+          "teks": "Menunggu raksasa semakin dekat lalu melempar terasi di bawah kakinya.",
+          "ke": "akhir-lumpur",
+          "skor": { "bijak": 2 }
+        }
+      ]
+    },
+    {
+      "id": "timun:11",
+      "suasana": "hutan",
+      "teks": "Timun Mas bersembunyi di balik akar pohon besar yang berlubang. Napasnya tertahan. Buto Ijo berjalan perlahan melewati pepohonan, mengendus-endus seperti binatang buas. Bayangan raksasa itu memanjang di tanah. Timun Mas tahu ia tidak bisa bersembunyi selamanya — bekal ajaib ada di sakunya, tetapi ia memilih diam dan berharap.",
+      "pilihan": [
+        {
+          "teks": "Tetap berdiam diri dan berharap raksasa menyerah mencarinya.",
+          "ke": "akhir-sembunyi",
+          "skor": { "bakti": 1 }
+        },
+        {
+          "teks": "Mencoba bernegosiasi dengan Buto Ijo dari tempat persembunyian.",
+          "ke": "akhir-sembunyi",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "timun:12",
+      "suasana": "desa",
+      "teks": "Pasangan petani itu menolak syarat Buto Ijo dan pulang dengan tangan kosong. Bertahun-tahun mereka mencari cara lain: berdoa ke pertapaan, meminta nasihat tetua desa, membawa persembahan ke punden keramat. Ketika Buto Ijo akhirnya datang ke desa menagih janji yang tak pernah dibuat, orang tua Timun Mas berdiri di depan pintu dan mencoba berbicara.",
+      "pilihan": [
+        {
+          "teks": "Menawarkan hasil panen berlimpah sebagai ganti seorang anak.",
+          "ke": "akhir-damai",
+          "skor": { "bijak": 2 }
+        },
+        {
+          "teks": "Meminta tetua desa bersama-sama menghadapi Buto Ijo.",
+          "ke": "akhir-damai",
+          "skor": { "berani": 2 }
+        }
+      ]
+    }
+  ],
+  "akhir": [
+    {
+      "id": "akhir-lumpur",
+      "jenis": "kanon",
+      "judul": "Lumpur yang Menelan Raksasa",
+      "teks": "Terasi menyentuh lautan di depan Buto Ijo — dan air berubah menjadi lumpur panas yang mendidih. Raksasa itu berteriak, meronta, tetapi lumpur terus menariknya ke bawah. Semakin ia berjuang, semakin dalam ia tenggelam. Suaranya perlahan menghilang. Timun Mas berdiri di tepi, mengatur napasnya. Ketika semuanya sunyi, ia berbalik dan berlari pulang. Orang tuanya sudah menunggu di depan rumah. Mereka bertiga saling berpelukan — bebas, selamat, dan tak lagi dikejar janji."
+    },
+    {
+      "id": "akhir-sembunyi",
+      "jenis": "alternatif",
+      "judul": "Gadis yang Menunggu di Kegelapan",
+      "labelAlternatif": "Seandainya Timun Mas memilih bersembunyi daripada berlari...",
+      "teks": "Buto Ijo tidak menyerah. Ia membaui jejak Timun Mas dan menemukan tempat persembunyiannya menjelang fajar. Tanpa bekal ajaib yang digunakan, Timun Mas tidak punya senjata. Ia dibawa pergi oleh raksasa itu, dan janji lama akhirnya tergenapi dengan cara paling menyedihkan. Orang tuanya yang menunggunya di rumah hanya bisa menatap ke arah hutan dengan hati yang hancur. Bekal empat bungkusan itu tak pernah sempat terpakai."
+    },
+    {
+      "id": "akhir-damai",
+      "jenis": "alternatif",
+      "judul": "Janji yang Tak Pernah Ada",
+      "labelAlternatif": "Seandainya orang tua Timun Mas menemukan cara lain menebus janji...",
+      "teks": "Buto Ijo terkejut melihat petani dan seluruh warga desa berdiri bersama. Tawaran hasil panen berlimpah dan keberanian warga yang bersatu membuat raksasa itu ragu. Setelah negosiasi panjang — dan ancaman kolektif seluruh desa — Buto Ijo pergi tanpa membawa siapa pun. Timun Mas tumbuh bebas tanpa bayang-bayang janji. Orang tuanya belajar bahwa menolak janji buruk sejak awal lebih bijak daripada menanggungnya bertahun-tahun."
+    }
+  ]
+}

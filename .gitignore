@@ -1,0 +1,18 @@
+# Node modules (tidak ada dependensi di MVP; baris ini berjaga-jaga bila kelak ada tool dev)
+node_modules/
+
+# Build / artefak lokal
+dist/
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# PERINGATAN — JANGAN tambahkan baris berikut atau pola sejenis:
+#   .kiro/
+#   .kiro
+# Folder .kiro/ WAJIB ikut commit (berisi spec, steering, dan hooks Kiro).
+# Mengecualikannya adalah syarat diskualifikasi pada Kiroween 2026.

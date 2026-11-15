@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!--
+    illustrations.svg — Kisah Interaktif
+    Satu <symbol> per nilai suasana. Semua digambar sendiri (SVG murni).
+    Tanpa aset berhak cipta, tanpa gambar raster, tanpa muatan dari internet.
+    Dipakai dari render.js via: <svg><use href="assets/illustrations.svg#suasana-pantai"/></svg>
+  -->
+
+  <!-- pantai: langit, laut, pasir, matahari, perahu -->
+  <symbol id="suasana-pantai" viewBox="0 0 100 60">
+    <!-- langit -->
+    <rect width="100" height="38" fill="#87ceeb"/>
+    <!-- matahari -->
+    <circle cx="78" cy="12" r="7" fill="#f7c948"/>
+    <!-- sinar matahari -->
+    <line x1="78" y1="2"  x2="78" y2="0"  stroke="#f7c948" stroke-width="1.2"/>
+    <line x1="88" y1="12" x2="90" y2="12" stroke="#f7c948" stroke-width="1.2"/>
+    <line x1="85" y1="5"  x2="87" y2="3"  stroke="#f7c948" stroke-width="1.2"/>
+    <line x1="85" y1="19" x2="87" y2="21" stroke="#f7c948" stroke-width="1.2"/>
+    <line x1="71" y1="5"  x2="69" y2="3"  stroke="#f7c948" stroke-width="1.2"/>
+    <!-- awan -->
+    <ellipse cx="22" cy="10" rx="10" ry="5" fill="#fff" opacity="0.85"/>
+    <ellipse cx="30" cy="10" rx="8"  ry="4" fill="#fff" opacity="0.85"/>
+    <ellipse cx="16" cy="11" rx="6"  ry="3" fill="#fff" opacity="0.85"/>
+    <!-- laut -->
+    <rect x="0" y="36" width="100" height="14" fill="#2a89c8"/>
+    <!-- ombak kecil -->
+    <path d="M0 38 Q12 36 24 38 Q36 40 48 38 Q60 36 72 38 Q84 40 100 38" fill="none" stroke="#6bbfe0" stroke-width="1"/>
+    <!-- pasir -->
+    <rect x="0" y="50" width="100" height="10" fill="#e8d59a"/>
+    <!-- perahu sederhana -->
+    <path d="M38 36 L44 36 L46 42 L36 42 Z" fill="#8b4513" stroke="#5c2d0a" stroke-width="0.5"/>
+    <line x1="41" y1="30" x2="41" y2="36" stroke="#5c2d0a" stroke-width="0.8"/>
+    <path d="M41 30 L48 34 L41 36 Z" fill="#e8c87a" opacity="0.9"/>
+  </symbol>
+
+  <!-- laut-badai: langit gelap, ombak besar, petir, kapal -->
+  <symbol id="suasana-laut-badai" viewBox="0 0 100 60">
+    <!-- langit badai -->
+    <rect width="100" height="60" fill="#1e3a4f"/>
+    <!-- awan badai -->
+    <ellipse cx="30" cy="10" rx="22" ry="8" fill="#2d4a60" opacity="0.9"/>
+    <ellipse cx="55" cy="8"  rx="20" ry="7" fill="#243d52" opacity="0.9"/>
+    <ellipse cx="80" cy="12" rx="18" ry="7" fill="#2d4a60" opacity="0.9"/>
+    <!-- petir -->
+    <polyline points="60,14 55,24 59,24 52,36" fill="none" stroke="#f0e44a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- laut berombak besar -->
+    <path d="M0 42 Q10 36 20 42 Q30 48 40 42 Q50 36 60 42 Q70 48 80 42 Q90 36 100 42 L100 60 L0 60 Z" fill="#174566"/>
+    <path d="M0 46 Q12 40 24 46 Q36 52 48 46 Q60 40 72 46 Q84 52 100 46 L100 60 L0 60 Z" fill="#0f3450"/>
+    <!-- ombak putih -->
+    <path d="M0 42 Q10 38 20 42" fill="none" stroke="#6aaed4" stroke-width="1.5"/>
+    <path d="M40 42 Q50 38 60 42" fill="none" stroke="#6aaed4" stroke-width="1.5"/>
+    <path d="M80 42 Q90 38 100 42" fill="none" stroke="#6aaed4" stroke-width="1.5"/>
+    <!-- kapal karam -->
+    <path d="M42 38 L60 38 L62 44 L40 44 Z" fill="#5c3010" opacity="0.8"/>
+    <line x1="51" y1="30" x2="51" y2="38" stroke="#3a1f08" stroke-width="1" opacity="0.8"/>
+  </symbol>
+
+  <!-- desa: rumah sederhana, sawah, pohon kelapa, langit siang -->
+  <symbol id="suasana-desa" viewBox="0 0 100 60">
+    <!-- langit -->
+    <rect width="100" height="36" fill="#b8d8f0"/>
+    <!-- matahari kecil -->
+    <circle cx="85" cy="10" r="5" fill="#f7c948" opacity="0.9"/>
+    <!-- awan -->
+    <ellipse cx="25" cy="10" rx="12" ry="5" fill="#fff" opacity="0.8"/>
+    <ellipse cx="33" cy="10" rx="8"  ry="4" fill="#fff" opacity="0.8"/>
+    <!-- tanah -->
+    <rect x="0" y="36" width="100" height="24" fill="#8db87a"/>
+    <!-- sawah (kotak hijau muda) -->
+    <rect x="2"  y="44" width="20" height="12" fill="#a8d87a" stroke="#6a9a4a" stroke-width="0.5"/>
+    <rect x="24" y="44" width="20" height="12" fill="#b8e08a" stroke="#6a9a4a" stroke-width="0.5"/>
+    <!-- garis sawah -->
+    <line x1="2" y1="50" x2="22" y2="50" stroke="#6a9a4a" stroke-width="0.4"/>
+    <line x1="24" y1="50" x2="44" y2="50" stroke="#6a9a4a" stroke-width="0.4"/>
+    <!-- rumah -->
+    <rect x="52" y="36" width="22" height="16" fill="#c8a070"/>
+    <polygon points="50,36 74,36 62,26" fill="#8b4030"/>
+    <rect x="60" y="44" width="6" height="8" fill="#5c2d10"/>
+    <rect x="54" y="39" width="5" height="5" fill="#87ceeb" stroke="#5c3010" stroke-width="0.5"/>
+    <!-- pohon kelapa -->
+    <line x1="82" y1="58" x2="84" y2="30" stroke="#8b6040" stroke-width="1.5"/>
+    <ellipse cx="84" cy="30" rx="8" ry="4" fill="#4a8a2a" transform="rotate(-20,84,30)"/>
+    <ellipse cx="84" cy="28" rx="8" ry="4" fill="#3a7a1a" transform="rotate(10,84,28)"/>
+    <ellipse cx="84" cy="32" rx="7" ry="3" fill="#4a8a2a" transform="rotate(35,84,32)"/>
+  </symbol>
+
+  <!-- hutan: pepohonan rimbun, bambu, semak -->
+  <symbol id="suasana-hutan" viewBox="0 0 100 60">
+    <!-- langit disaring daun -->
+    <rect width="100" height="60" fill="#1a4a1a"/>
+    <!-- cahaya langit di atas -->
+    <rect width="100" height="20" fill="#2d6a2d" opacity="0.6"/>
+    <!-- pohon besar kiri -->
+    <rect x="2"  y="30" width="6" height="30" fill="#5c3010"/>
+    <ellipse cx="5"  cy="25" rx="12" ry="12" fill="#1e6a1e"/>
+    <ellipse cx="5"  cy="20" rx="9"  ry="9"  fill="#2a7a2a"/>
+    <!-- pohon tengah -->
+    <rect x="45" y="32" width="5" height="28" fill="#5c3010"/>
+    <ellipse cx="47" cy="26" rx="13" ry="13" fill="#1e5a1e"/>
+    <ellipse cx="47" cy="20" rx="10" ry="10" fill="#2a6a2a"/>
+    <!-- pohon kanan -->
+    <rect x="85" y="28" width="6" height="32" fill="#5c3010"/>
+    <ellipse cx="88" cy="22" rx="11" ry="11" fill="#1e6a1e"/>
+    <ellipse cx="88" cy="16" rx="8"  ry="8"  fill="#2a7a2a"/>
+    <!-- bambu -->
+    <line x1="28" y1="60" x2="30" y2="10" stroke="#5a9a30" stroke-width="1.5"/>
+    <line x1="32" y1="60" x2="34" y2="12" stroke="#4a8a20" stroke-width="1.5"/>
+    <line x1="36" y1="60" x2="38" y2="14" stroke="#5a9a30" stroke-width="1.5"/>
+    <!-- ruas bambu -->
+    <line x1="29" y1="40" x2="31" y2="40" stroke="#3a7010" stroke-width="0.8"/>
+    <line x1="33" y1="38" x2="35" y2="38" stroke="#3a7010" stroke-width="0.8"/>
+    <line x1="37" y1="36" x2="39" y2="36" stroke="#3a7010" stroke-width="0.8"/>
+    <line x1="29" y1="52" x2="31" y2="52" stroke="#3a7010" stroke-width="0.8"/>
+    <!-- semak tanah -->
+    <ellipse cx="15" cy="55" rx="12" ry="5" fill="#2a5a1a"/>
+    <ellipse cx="65" cy="56" rx="15" ry="5" fill="#1e4a1a"/>
+    <!-- cahaya tembus celah -->
+    <line x1="60" y1="0" x2="55" y2="35" stroke="#f0e878" stroke-width="0.8" opacity="0.3"/>
+    <line x1="70" y1="0" x2="66" y2="30" stroke="#f0e878" stroke-width="0.6" opacity="0.2"/>
+  </symbol>
+
+  <!-- istana: gapura kerajaan, menara, dinding batu -->
+  <symbol id="suasana-istana" viewBox="0 0 100 60">
+    <!-- langit senja -->
+    <rect width="100" height="36" fill="#f0d0a0"/>
+    <rect width="100" height="10" fill="#e8a040" opacity="0.6" y="26"/>
+    <!-- matahari terbenam -->
+    <circle cx="50" cy="36" r="12" fill="#f07820" opacity="0.8"/>
+    <!-- tanah -->
+    <rect x="0" y="52" width="100" height="8" fill="#8a6840"/>
+    <!-- dinding istana utama -->
+    <rect x="20" y="30" width="60" height="22" fill="#c8b898"/>
+    <rect x="22" y="32" width="56" height="20" fill="#d4c4a4" stroke="#a89070" stroke-width="0.5"/>
+    <!-- pintu gerbang -->
+    <rect x="43" y="40" width="14" height="12" fill="#5c3010"/>
+    <path d="M43 40 Q50 34 57 40" fill="#5c3010"/>
+    <!-- jendela -->
+    <rect x="26" y="34" width="8" height="6" rx="1" fill="#87ceeb" stroke="#a89070" stroke-width="0.5"/>
+    <rect x="66" y="34" width="8" height="6" rx="1" fill="#87ceeb" stroke="#a89070" stroke-width="0.5"/>
+    <!-- menara kiri -->
+    <rect x="12" y="22" width="14" height="30" fill="#b8a888"/>
+    <polygon points="12,22 26,22 19,12" fill="#9a3020"/>
+    <!-- menara kanan -->
+    <rect x="74" y="22" width="14" height="30" fill="#b8a888"/>
+    <polygon points="74,22 88,22 81,12" fill="#9a3020"/>
+    <!-- puncak menara -->
+    <line x1="19" y1="12" x2="19" y2="6" stroke="#c84020" stroke-width="1.5"/>
+    <polygon points="19,6 22,10 16,10" fill="#c84020"/>
+    <line x1="81" y1="12" x2="81" y2="6" stroke="#c84020" stroke-width="1.5"/>
+    <polygon points="81,6 84,10 78,10" fill="#c84020"/>
+    <!-- merlon (merlons di atas dinding) -->
+    <rect x="22" y="28" width="4" height="4" fill="#c8b898"/>
+    <rect x="28" y="28" width="4" height="4" fill="#c8b898"/>
+    <rect x="34" y="28" width="4" height="4" fill="#c8b898"/>
+    <rect x="62" y="28" width="4" height="4" fill="#c8b898"/>
+    <rect x="68" y="28" width="4" height="4" fill="#c8b898"/>
+    <rect x="74" y="28" width="4" height="4" fill="#c8b898"/>
+  </symbol>
+
+  <!-- candi: siluet candi bertingkat, langit merah semburat -->
+  <symbol id="suasana-candi" viewBox="0 0 100 60">
+    <!-- langit malam -->
+    <rect width="100" height="60" fill="#1a1228"/>
+    <!-- cahaya obor / bulan -->
+    <circle cx="82" cy="10" r="6" fill="#f8e870" opacity="0.8"/>
+    <!-- bintang -->
+    <circle cx="10" cy="8"  r="0.8" fill="#fff" opacity="0.7"/>
+    <circle cx="25" cy="5"  r="0.6" fill="#fff" opacity="0.7"/>
+    <circle cx="45" cy="7"  r="0.8" fill="#fff" opacity="0.6"/>
+    <circle cx="60" cy="4"  r="0.6" fill="#fff" opacity="0.7"/>
+    <circle cx="15" cy="14" r="0.6" fill="#fff" opacity="0.5"/>
+    <!-- candi utama (bertingkat) -->
+    <!-- tingkat 1 (dasar) -->
+    <rect x="20" y="48" width="60" height="12" fill="#7a6448"/>
+    <!-- tingkat 2 -->
+    <rect x="26" y="38" width="48" height="12" fill="#8a7458"/>
+    <!-- tingkat 3 -->
+    <rect x="32" y="28" width="36" height="12" fill="#9a8468"/>
+    <!-- tingkat 4 -->
+    <rect x="38" y="20" width="24" height="10" fill="#aa9478"/>
+    <!-- puncak -->
+    <rect x="44" y="14" width="12" height="8"  fill="#ba9a60"/>
+    <polygon points="44,14 56,14 50,6" fill="#c8a848"/>
+    <!-- detail pintu candi -->
+    <rect x="46" y="50" width="8" height="10" fill="#3a2a18"/>
+    <path d="M46 50 Q50 46 54 50" fill="#3a2a18"/>
+    <!-- relief / dekorasi horizontal -->
+    <line x1="20" y1="49" x2="80" y2="49" stroke="#6a5438" stroke-width="0.6"/>
+    <line x1="26" y1="39" x2="74" y2="39" stroke="#6a5438" stroke-width="0.6"/>
+    <line x1="32" y1="29" x2="68" y2="29" stroke="#6a5438" stroke-width="0.6"/>
+    <!-- candi kecil kiri dan kanan -->
+    <rect x="2"  y="44" width="14" height="16" fill="#6a5440"/>
+    <polygon points="2,44 16,44 9,36" fill="#8a6040"/>
+    <rect x="84" y="44" width="14" height="16" fill="#6a5440"/>
+    <polygon points="84,44 98,44 91,36" fill="#8a6040"/>
+    <!-- obor di kanan bawah -->
+    <line x1="92" y1="58" x2="92" y2="48" stroke="#8a6040" stroke-width="1.2"/>
+    <ellipse cx="92" cy="47" rx="2" ry="3" fill="#f07020" opacity="0.9"/>
+  </symbol>
+
+  <!-- sumur: sumur batu bulat, timba, tali, latar desa gelap -->
+  <symbol id="suasana-sumur" viewBox="0 0 100 60">
+    <!-- latar tanah desa -->
+    <rect width="100" height="60" fill="#c0a878"/>
+    <!-- langit sedikit -->
+    <rect width="100" height="18" fill="#d0c090" opacity="0.7"/>
+    <!-- tanah -->
+    <rect x="0" y="46" width="100" height="14" fill="#9a7850"/>
+    <!-- pohon latar -->
+    <rect x="80" y="28" width="4" height="22" fill="#6a4820"/>
+    <ellipse cx="82" cy="24" rx="8" ry="8" fill="#3a6a20"/>
+    <!-- dinding sumur (segi delapan/bulat dari batu) -->
+    <ellipse cx="50" cy="46" rx="18" ry="6" fill="#8a7a60"/>
+    <rect x="32" y="32" width="36" height="14" fill="#9a8a70"/>
+    <ellipse cx="50" cy="32" rx="18" ry="6" fill="#b0a080"/>
+    <!-- batu dinding detail -->
+    <line x1="32" y1="38" x2="68" y2="38" stroke="#7a6a50" stroke-width="0.5"/>
+    <line x1="32" y1="43" x2="68" y2="43" stroke="#7a6a50" stroke-width="0.5"/>
+    <line x1="40" y1="32" x2="40" y2="46" stroke="#7a6a50" stroke-width="0.4"/>
+    <line x1="50" y1="32" x2="50" y2="46" stroke="#7a6a50" stroke-width="0.4"/>
+    <line x1="60" y1="32" x2="60" y2="46" stroke="#7a6a50" stroke-width="0.4"/>
+    <!-- air di dalam sumur -->
+    <ellipse cx="50" cy="32" rx="16" ry="5" fill="#4a8aaa" opacity="0.8"/>
+    <ellipse cx="50" cy="32" rx="12" ry="3" fill="#6aaac8" opacity="0.6"/>
+    <!-- penyangga kayu -->
+    <rect x="38" y="20" width="4"  height="14" fill="#8b6040"/>
+    <rect x="58" y="20" width="4"  height="14" fill="#8b6040"/>
+    <rect x="36" y="18" width="28" height="4"  fill="#6b4020"/>
+    <!-- tali dan timba -->
+    <line x1="50" y1="22" x2="50" y2="34" stroke="#a08040" stroke-width="0.8"/>
+    <rect x="47" y="26" width="6" height="6" rx="1" fill="#8b6040" stroke="#5c3010" stroke-width="0.5"/>
+  </symbol>
+
+  <!-- lumpur: kubangan lumpur panas mendidih, gelembung, asap, latar suram -->
+  <symbol id="suasana-lumpur" viewBox="0 0 100 60">
+    <!-- langit suram/merah -->
+    <rect width="100" height="30" fill="#6a2808"/>
+    <!-- asap/kabut -->
+    <ellipse cx="30" cy="22" rx="18" ry="8" fill="#8a5030" opacity="0.6"/>
+    <ellipse cx="65" cy="20" rx="20" ry="8" fill="#7a4020" opacity="0.5"/>
+    <ellipse cx="85" cy="25" rx="12" ry="6" fill="#8a5030" opacity="0.4"/>
+    <!-- tanah sekitar -->
+    <rect x="0" y="30" width="100" height="8" fill="#7a5030"/>
+    <!-- kubangan lumpur mendidih -->
+    <ellipse cx="50" cy="50" rx="45" ry="16" fill="#6a3808"/>
+    <ellipse cx="50" cy="50" rx="40" ry="13" fill="#8a4a18"/>
+    <ellipse cx="50" cy="50" rx="35" ry="10" fill="#a05a20"/>
+    <!-- gelembung lumpur -->
+    <circle cx="30" cy="47" r="3" fill="#b06828" stroke="#6a3808" stroke-width="0.8"/>
+    <circle cx="50" cy="44" r="4" fill="#b87030" stroke="#6a3808" stroke-width="0.8"/>
+    <circle cx="70" cy="48" r="3" fill="#b06828" stroke="#6a3808" stroke-width="0.8"/>
+    <circle cx="38" cy="53" r="2" fill="#c07838" stroke="#6a3808" stroke-width="0.6"/>
+    <circle cx="62" cy="52" r="2" fill="#c07838" stroke="#6a3808" stroke-width="0.6"/>
+    <!-- percikan lumpur -->
+    <line x1="30" y1="47" x2="27" y2="40" stroke="#c07020" stroke-width="0.8" opacity="0.7"/>
+    <line x1="50" y1="44" x2="48" y2="37" stroke="#c07020" stroke-width="0.8" opacity="0.7"/>
+    <line x1="70" y1="48" x2="73" y2="41" stroke="#c07020" stroke-width="0.8" opacity="0.7"/>
+    <!-- asap naik -->
+    <path d="M42 36 Q40 30 44 24 Q46 18 42 14" fill="none" stroke="#8a7060" stroke-width="1" opacity="0.5"/>
+    <path d="M56 34 Q58 28 54 22 Q52 16 56 12" fill="none" stroke="#8a7060" stroke-width="1" opacity="0.4"/>
+  </symbol>
+
+</svg>

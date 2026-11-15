@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kisah Interaktif — gamebook cerita rakyat Nusantara: Malin Kundang, Timun Mas, Roro Jonggrang. Pilih jalanmu, temukan semua akhir.">
+  <title>Kisah Interaktif — Cerita Rakyat Nusantara Bercabang</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header id="header-situs">
+    <div class="header-dalam">
+      <h1 class="judul-situs">Kisah Interaktif</h1>
+      <p class="tagline">Cerita rakyat Nusantara yang hidup kembali — kamulah yang memilih jalannya.</p>
+    </div>
+  </header>
+
+  <nav id="nav-cerita" class="nav-cerita" aria-label="Navigasi cerita" hidden>
+    <button id="btn-beranda" class="btn-nav" type="button">← Beranda</button>
+    <button id="btn-ulang" class="btn-nav" type="button">Mulai dari awal</button>
+  </nav>
+
+  <main id="adegan" aria-live="polite" aria-atomic="false">
+    <!-- Konten beranda atau adegan dirender oleh src/main.js lewat render.js. -->
+    <p class="pesan-muat">Memuat cerita…</p>
+  </main>
+
+  <div id="pilihan" role="group" aria-label="Pilihan cerita"></div>
+
+  <footer>
+    <p>
+      Cerita rakyat Nusantara (domain publik) — plot mengikuti versi yang dikenal umum,
+      sumber tercantum di <a href="docs/SUMBER-CERITA.md">docs/SUMBER-CERITA.md</a>.
+      Ilustrasi SVG buatan sendiri.
+    </p>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

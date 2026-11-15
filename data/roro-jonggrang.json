@@ -1,0 +1,242 @@
+{
+  "id": "roro-jonggrang",
+  "judul": "Roro Jonggrang",
+  "asal": "Jawa Tengah / DI Yogyakarta",
+  "pengantar": "Sang putri mengajukan syarat mustahil: seribu candi dalam semalam. Tipu daya fajar palsu pun berujung kutukan.",
+  "pesanMoral": "Kecerdikan bisa menyelamatkan, tetapi tipu muslihat membawa akibat; cinta yang dipaksakan tidak berbuah baik.",
+  "sumber": [
+    { "nama": "Wikipedia (EN) — Roro Jonggrang", "url": "https://en.wikipedia.org/wiki/Roro_Jonggrang" },
+    { "nama": "Wikipedia (ID) — Rara Jonggrang", "url": "https://id.wikipedia.org/wiki/Rara_Jonggrang" },
+    { "nama": "Yupiland — Cerita Rakyat Roro Jonggrang: Kisah Seribu Candi dalam Semalam", "url": "https://www.yupiland.com/blog/cerita-rakyat-roro-jonggrang" }
+  ],
+  "variasiDipakai": "Versi lengkap dua syarat: (1) sumur Jalatunda, (2) seribu candi dalam semalam. Nama dipakai: Bandung Bondowoso (ejaan alternatif Bandawasa), Prabu Damar Maya, Prabu Boko, Patih Gupolo/Gupala. TIDAK dipakai: versi ringkas yang menghilangkan syarat sumur Jalatunda.",
+  "mulaiDari": "roro:01",
+  "adegan": [
+    {
+      "id": "roro:01",
+      "suasana": "istana",
+      "teks": "Langit merah saga di atas Kerajaan Boko. Pasukan Pengging dipimpin Bandung Bondowoso, putra Prabu Damar Maya, menyerbu keraton setelah Prabu Boko menyerang lebih dulu. Genderang perang berdentam keras. Patih Gupolo menghadang Bandung di gerbang, namun Bandung menembus pertahanan itu dengan kesaktiannya. Prabu Boko sendiri turun ke medan laga. Kau adalah Bandung Bondowoso — pedangmu terangkat.",
+      "pilihan": [
+        {
+          "teks": "Maju menyerang Prabu Boko dengan segenap kesaktian.",
+          "ke": "roro:02",
+          "skor": { "berani": 2 }
+        },
+        {
+          "teks": "Menawarkan perdamaian sebelum pertempuran berlanjut.",
+          "ke": "roro:02",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:02",
+      "suasana": "istana",
+      "teks": "Pertempuran berakhir cepat. Prabu Boko tewas di tangan Bandung. Pasukan Pengging mengalir masuk ke keraton Boko yang megah. Di antara huru-hara kemenangan itu, Bandung melangkah ke balairung utama. Di sana berdiri seorang putri — Roro Jonggrang, anak Prabu Boko — dengan pandangan penuh amarah bercampur duka. Kecantikannya membuat Bandung terpaku seketika.",
+      "pilihan": [
+        {
+          "teks": "Mendekati sang putri dengan hormat dan memperkenalkan diri.",
+          "ke": "roro:03",
+          "skor": { "bijak": 1 }
+        },
+        {
+          "teks": "Meminta pengawal membawa sang putri menghadap.",
+          "ke": "roro:03",
+          "skor": { "berani": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:03",
+      "suasana": "istana",
+      "teks": "Bandung menatap Roro Jonggrang dan merasakan sesuatu yang belum pernah ia rasakan seumur hidupnya. Tanpa membuang waktu, ia berlutut dan melamar sang putri secara langsung. Roro Jonggrang terkejut — dan marah. 'Kau membunuh ayahku, lalu melamarku?' Namun Bandung tetap bersimpuh, menanti jawabannya. Roro Jonggrang harus memilih sikapnya.",
+      "pilihan": [
+        {
+          "teks": "Menolak Bandung secara terus terang karena ia pembunuh ayahnya.",
+          "ke": "roro:04b",
+          "skor": { "bijak": 1 }
+        },
+        {
+          "teks": "Menyembunyikan penolakan dan mengajukan syarat yang mustahil.",
+          "ke": "roro:04",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:04b",
+      "suasana": "istana",
+      "teks": "Roro Jonggrang berdiri tegak. 'Bandung Bondowoso, kau membunuh ayahku. Tidak ada pernikahan di antara kita, selamanya.' Suaranya tak bergetar. Bandung terdiam lama. Para prajurit menahan napas. Akhirnya Bandung berdiri, menundukkan kepala perlahan. 'Aku menerima jawabanmu, Sang Putri.' Ia memimpin pasukannya keluar dari keraton Boko — tanpa kekerasan, tanpa dendam.",
+      "pilihan": [
+        {
+          "teks": "Roro Jonggrang mengucapkan terima kasih atas pengertian Bandung.",
+          "ke": "akhir-jujur",
+          "skor": { "bakti": 1 }
+        },
+        {
+          "teks": "Roro Jonggrang menatap kepergian Bandung dalam diam.",
+          "ke": "akhir-jujur",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:04",
+      "suasana": "istana",
+      "teks": "Pikiran Roro Jonggrang berpacu cepat. Menolak mentah-mentah bisa berbahaya — Bandung adalah penakluk yang sakti. Ia memutuskan untuk mengulur waktu dengan syarat yang ia yakin tak mungkin dipenuhi. 'Baiklah,' katanya dengan suara tenang, 'aku bersedia menjadi istrimu, asalkan kau penuhi dua syaratku.' Bandung bangkit berdiri, matanya berbinar penuh harap.",
+      "pilihan": [
+        {
+          "teks": "Mendengarkan syarat sang putri dengan penuh perhatian.",
+          "ke": "roro:05",
+          "skor": { "bijak": 1 }
+        },
+        {
+          "teks": "Menyetujui syarat apa pun tanpa bertanya lebih dulu.",
+          "ke": "roro:05",
+          "skor": { "berani": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:05",
+      "suasana": "istana",
+      "teks": "Roro Jonggrang mengangkat dua jari. 'Pertama, gali untukku sumur Jalatunda yang dalam dan berair jernih. Kedua, bangunkan seribu candi dalam satu malam.' Bandung mengernyit sejenak, lalu tersenyum. 'Dua syarat itu akan kupenuhi.' Roro Jonggrang menyembunyikan rasa lega — ia yakin tak ada manusia yang sanggup melakukannya. Keesokan harinya, Bandung mulai mengerjakan syarat pertama.",
+      "pilihan": [
+        {
+          "teks": "Menyaksikan Bandung mulai menggali sumur Jalatunda.",
+          "ke": "roro:06",
+          "skor": { "bijak": 1 }
+        },
+        {
+          "teks": "Memerintahkan Patih Gupolo mengawasi pekerjaan sumur.",
+          "ke": "roro:06",
+          "skor": { "berani": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:06",
+      "suasana": "sumur",
+      "teks": "Dengan kesaktiannya, Bandung Bondowoso menggali sumur Jalatunda dalam waktu singkat. Dinding batu terbentuk rapi, air jernih mulai mengalir dari dasar. Bandung melompat masuk untuk memastikan kedalaman dan kualitas airnya. Kini ia berdiri di dasar sumur yang dalam. Di atas, Roro Jonggrang dan Patih Gupolo mengintip ke bawah. Ini kesempatan yang mungkin tidak datang dua kali.",
+      "pilihan": [
+        {
+          "teks": "Memerintahkan Gupolo menimbun sumur dengan batu besar.",
+          "ke": "roro:07",
+          "skor": { "berani": 1 }
+        },
+        {
+          "teks": "Membiarkan Bandung keluar dan menerima sumur itu dengan tulus.",
+          "ke": "roro:08",
+          "skor": { "bakti": 2 }
+        }
+      ]
+    },
+    {
+      "id": "roro:07",
+      "suasana": "sumur",
+      "teks": "Atas perintah Roro Jonggrang, Patih Gupolo dan para prajurit menggulingkan batu-batu besar ke dalam sumur. Bandung terkurung di kegelapan. Namun kesaktian Bandung jauh melampaui perkiraan mereka — dengan sekali hentakan, batu-batu itu terlempar ke atas. Bandung melompat keluar, debu berterbangan. Ia menatap Roro Jonggrang lama, lalu berkata pelan, 'Aku memaafkanmu. Sekarang, mari kita selesaikan syarat keduamu.'",
+      "pilihan": [
+        {
+          "teks": "Roro Jonggrang tertunduk malu namun lega Bandung memaafkannya.",
+          "ke": "roro:08",
+          "skor": { "bakti": 1 }
+        },
+        {
+          "teks": "Roro Jonggrang tetap diam, pikiran berpacu mencari cara lain.",
+          "ke": "roro:08",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:08",
+      "suasana": "candi",
+      "teks": "Malam tiba. Bandung Bondowoso berdiri di padang terbuka di luar keraton Boko. Ia mengerahkan kesaktiannya, memanggil jin, roh, dan makhluk halus dari segala penjuru. Ribuan makhluk gaib muncul dalam kegelapan, masing-masing mengangkut batu dan mengukir dinding. Candi-candi mulai berdiri satu demi satu dengan kecepatan yang menakjubkan. Roro Jonggrang mengintip dari balik tirai jendela keraton, jantungnya berdegup kencang.",
+      "pilihan": [
+        {
+          "teks": "Menghitung candi yang telah berdiri — sudah lebih dari sembilan ratus.",
+          "ke": "roro:09",
+          "skor": { "bijak": 2 }
+        },
+        {
+          "teks": "Membangunkan dayang-dayang untuk berdoa agar pekerjaan itu gagal.",
+          "ke": "roro:09",
+          "skor": { "berani": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:09",
+      "suasana": "candi",
+      "teks": "Langit masih gelap, namun para jin telah menyelesaikan 999 candi. Hanya satu candi lagi — dan fajar sejati masih jauh. Roro Jonggrang gemetar. Jika candi ke-1000 selesai, ia harus menikahi Bandung. Waktu tinggal sangat sedikit. Para jin bergerak semakin cepat, batu demi batu disusun dengan gesit. Roro Jonggrang harus memutuskan: bertindak sekarang, atau menyaksikan nasibnya tersegel.",
+      "pilihan": [
+        {
+          "teks": "Membangunkan perempuan desa untuk menumbuk padi dan membakar jerami di timur.",
+          "ke": "roro:10",
+          "skor": { "berani": 2 }
+        },
+        {
+          "teks": "Terlambat bertindak — para jin menyelesaikan candi ke-1000 sebelum sempat dicegah.",
+          "ke": "roro:11",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:10",
+      "suasana": "desa",
+      "teks": "Roro Jonggrang berlari ke pemukiman. Ia membangunkan para perempuan dan meminta mereka menumbuk padi dengan keras. Ia lalu membakar tumpukan jerami di sisi timur agar langit bersemu merah. Ayam-ayam desa yang terkejut pun berkokok bersahutan. Para jin berhenti bekerja — mereka mengira fajar telah tiba. Makhluk-makhluk gaib itu lenyap sebelum candi ke-1000 rampung. Bandung Bondowoso berjalan perlahan mendekati Roro Jonggrang.",
+      "pilihan": [
+        {
+          "teks": "Roro Jonggrang berdiri tegak, menantang tatapan Bandung yang membara.",
+          "ke": "akhir-arca",
+          "skor": { "berani": 1 }
+        },
+        {
+          "teks": "Roro Jonggrang mencoba melarikan diri dari murka Bandung.",
+          "ke": "akhir-arca",
+          "skor": { "bijak": 1 }
+        }
+      ]
+    },
+    {
+      "id": "roro:11",
+      "suasana": "candi",
+      "teks": "Roro Jonggrang ragu sesaat terlalu lama. Para jin bergerak tanpa henti — batu terakhir diletakkan, ukiran terakhir digoreskan. Candi ke-1000 berdiri megah sebelum fajar palsu sempat dijalankan. Bandung Bondowoso berbalik dan menatap Roro Jonggrang dengan senyum tenang. 'Seribu candi telah selesai sebelum matahari terbit. Syaratmu terpenuhi, Sang Putri.' Roro Jonggrang tak bisa berkata apa pun.",
+      "pilihan": [
+        {
+          "teks": "Roro Jonggrang menerima kenyataan dan menepati janjinya.",
+          "ke": "akhir-fajar",
+          "skor": { "bakti": 2 }
+        },
+        {
+          "teks": "Roro Jonggrang mengakui kecerdasan dan kekuatan Bandung dengan tulus.",
+          "ke": "akhir-fajar",
+          "skor": { "bijak": 2 }
+        }
+      ]
+    }
+  ],
+  "akhir": [
+    {
+      "id": "akhir-arca",
+      "jenis": "kanon",
+      "judul": "Kutukan Sang Putri",
+      "teks": "Bandung Bondowoso berdiri di hadapan 999 candi yang berdiri gagah. Matanya merah padam. 'Kau memperdayaku dengan fajar palsu,' ucapnya dengan suara bergetar menahan amarah. 'Maka jadilah kau pelengkap seribu candimu sendiri!' Kutukan terucap — tubuh Roro Jonggrang perlahan mengeras, batu abu-abu menjalar dari kaki hingga ke ujung mahkotanya. Ia menjadi arca batu yang indah, candi ke-1000, dipercaya sebagai arca Dewi Durga di Candi Prambanan. Sembilan ratus sembilan puluh sembilan candi lainnya dikenal sepanjang masa sebagai Candi Sewu."
+    },
+    {
+      "id": "akhir-jujur",
+      "jenis": "alternatif",
+      "judul": "Penolakan yang Jujur",
+      "labelAlternatif": "Seandainya Roro Jonggrang menolak dengan terus terang…",
+      "teks": "Bandung Bondowoso meninggalkan keraton Boko dengan kepala tegak dan hati yang berat namun terhormat. Roro Jonggrang menutup pintu balairung pelan-pelan. Ia tahu ia baru saja mengambil risiko besar, namun kejujurannya justru melucuti amarah sang penakluk. Keraton Boko tidak dirubuhkan. Tahun-tahun berlalu, kedua kerajaan menemukan kedamaian yang rapuh. Roro Jonggrang memimpin Kerajaan Boko dengan bijaksana — putri yang tak mengorbankan harga diri demi keselamatan semu."
+    },
+    {
+      "id": "akhir-fajar",
+      "jenis": "alternatif",
+      "judul": "Seribu Candi Selesai",
+      "labelAlternatif": "Seandainya para jin menyelesaikan candi ke-1000 sebelum fajar palsu…",
+      "teks": "Seribu candi berdiri megah di bawah langit yang masih gelap. Bandung Bondowoso menggenggam tangan Roro Jonggrang dengan lembut. Roro Jonggrang menatap deretan candi itu — indah sekaligus menakutkan — dan menghela napas panjang. Syarat telah terpenuhi dengan cara yang jujur. Upacara pernikahan dilangsungkan saat matahari terbit. Kompleks candi itu menjadi simbol cinta yang tak biasa: dibangun dalam semalam oleh ribuan makhluk gaib, berdiri abadi sebagai warisan dua kerajaan yang akhirnya berdamai."
+    }
+  ]
+}

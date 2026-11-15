@@ -1,0 +1,640 @@
+/* style.css — Kisah Interaktif
+   Layout responsif (ponsel dulu), palet per cerita dan per suasana.
+   Kontras teks memenuhi WCAG AA (rasio ≥ 4,5:1 untuk teks normal).
+   Tanpa gambar eksternal, tanpa CDN.
+*/
+
+/* ============================================================
+   1. Reset minimal + Box model
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   2. Token warna dasar (palet netral)
+   ============================================================ */
+:root {
+  /* Warna netral */
+  --latar:         #fdf8ec;
+  --teks:          #2b2118;
+  --teks-redup:    #6b5744;
+  --aksen:         #8a5a2b;
+  --aksen-terang:  #c47c3a;
+  --batas:         #d6c4a8;
+
+  /* Palet beranda */
+  --bg-kartu:      #fffdf5;
+  --bayangan-kartu: 0 2px 8px rgba(0,0,0,0.10);
+
+  /* Tipografi */
+  --font-serif:    Georgia, "Times New Roman", serif;
+  --font-sans:     system-ui, -apple-system, sans-serif;
+
+  /* Ukuran */
+  --lebar-maks: 44rem;
+  --jarak:       1.25rem;
+}
+
+/* ============================================================
+   3. Palet per cerita — diterapkan via class di <body>
+   ============================================================ */
+
+/* Malin Kundang: biru laut dan coklat pasir */
+body.cerita-malin-kundang {
+  --latar:         #f0f7ff;
+  --teks:          #1a2d3a;
+  --teks-redup:    #4a6478;
+  --aksen:         #2a6fa8;
+  --aksen-terang:  #3d8dc4;
+  --batas:         #a8c8e0;
+}
+
+/* Timun Mas: hijau hutan Jawa dan kuning emas */
+body.cerita-timun-mas {
+  --latar:         #f4fbe8;
+  --teks:          #1a2b0e;
+  --teks-redup:    #4a6a30;
+  --aksen:         #3d7a1a;
+  --aksen-terang:  #5a9e2a;
+  --batas:         #a8d080;
+}
+
+/* Roro Jonggrang: abu batu candi dan emas merah */
+body.cerita-roro-jonggrang {
+  --latar:         #f8f4ee;
+  --teks:          #2a1f10;
+  --teks-redup:    #6a5030;
+  --aksen:         #9a4a10;
+  --aksen-terang:  #c46020;
+  --batas:         #d4a870;
+}
+
+/* ============================================================
+   4. Palet per suasana — menggeser aksen, berlapis di atas palet cerita
+   ============================================================ */
+
+body.suasana-pantai      { --latar-suasana: #dff0f8; --aksen-suasana: #2a7aaa; }
+body.suasana-laut-badai  { --latar-suasana: #1e3a4f; --aksen-suasana: #6aaed4; --teks-suasana: #e8f4f8; }
+body.suasana-desa        { --latar-suasana: #edf5dc; --aksen-suasana: #5a8a30; }
+body.suasana-hutan       { --latar-suasana: #d4eac0; --aksen-suasana: #2d6e18; }
+body.suasana-istana      { --latar-suasana: #f5efe0; --aksen-suasana: #9a7030; }
+body.suasana-candi       { --latar-suasana: #ede4d4; --aksen-suasana: #8a5a1a; }
+body.suasana-sumur       { --latar-suasana: #e0dace; --aksen-suasana: #6a5438; }
+body.suasana-lumpur      { --latar-suasana: #d4a862; --aksen-suasana: #6a3010; --teks-suasana: #2a1a08; }
+
+/* ============================================================
+   5. Dasar typografi dan layout
+   ============================================================ */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--latar);
+  color: var(--teks);
+  font-family: var(--font-serif);
+  line-height: 1.7;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  line-height: 1.3;
+}
+
+a {
+  color: var(--aksen);
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: var(--aksen-terang);
+}
+
+/* ============================================================
+   6. Header
+   ============================================================ */
+#header-situs {
+  background: var(--aksen);
+  color: #fff;
+  padding: 0.75rem var(--jarak);
+}
+
+.header-dalam {
+  max-width: var(--lebar-maks);
+  margin: 0 auto;
+}
+
+.judul-situs {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 0.2rem;
+}
+
+/* Sembunyikan tagline di dalam permainan (non-beranda) */
+body.dalam-permainan .tagline { display: none; }
+
+/* ============================================================
+   7. Navigasi dalam permainan
+   ============================================================ */
+.nav-cerita {
+  background: var(--latar);
+  border-bottom: 1px solid var(--batas);
+  padding: 0.5rem var(--jarak);
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-cerita[hidden] { display: none; }
+
+.btn-nav {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--aksen);
+  background: transparent;
+  border: 1px solid var(--aksen);
+  border-radius: 4px;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-nav:hover, .btn-nav:focus {
+  background: var(--aksen);
+  color: #fff;
+  outline: none;
+}
+
+.btn-nav:focus-visible {
+  outline: 2px solid var(--aksen-terang);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   8. Area konten utama
+   ============================================================ */
+#adegan {
+  flex: 1;
+  max-width: var(--lebar-maks);
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--jarak);
+}
+
+/* ============================================================
+   9. Beranda — kartu cerita
+   ============================================================ */
+.beranda-judul {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--aksen);
+}
+
+.beranda-pengantar {
+  margin-bottom: 1.5rem;
+  color: var(--teks-redup);
+}
+
+.daftar-kartu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kartu-cerita {
+  background: var(--bg-kartu);
+  border: 1px solid var(--batas);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: var(--bayangan-kartu);
+}
+
+.kartu-cerita h2 {
+  font-size: 1.15rem;
+  color: var(--aksen);
+  margin-bottom: 0.2rem;
+}
+
+.kartu-asal {
+  font-size: 0.8rem;
+  color: var(--teks-redup);
+  font-family: var(--font-sans);
+  margin-bottom: 0.5rem;
+}
+
+.kartu-pengantar {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.kartu-akhir {
+  font-size: 0.8rem;
+  color: var(--teks-redup);
+  font-family: var(--font-sans);
+  margin-bottom: 0.75rem;
+}
+
+.tombol-cerita {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: bold;
+  background: var(--aksen);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.tombol-cerita:hover, .tombol-cerita:focus {
+  background: var(--aksen-terang);
+  outline: none;
+}
+
+.tombol-cerita:focus-visible {
+  outline: 2px solid var(--aksen-terang);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   10. Layar adegan
+   ============================================================ */
+.adegan-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.adegan-judul-cerita {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--teks-redup);
+  font-weight: normal;
+}
+
+.adegan-progres {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--teks-redup);
+  background: var(--batas);
+  border-radius: 20px;
+  padding: 0.15rem 0.6rem;
+}
+
+.ilustrasi-suasana {
+  display: block;
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
+  margin: 0 auto 1.25rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ilustrasi-suasana svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adegan-teks {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* ============================================================
+   11. Tombol pilihan
+   ============================================================ */
+#pilihan {
+  max-width: var(--lebar-maks);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--jarak) 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.btn-pilihan {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  text-align: left;
+  background: var(--bg-kartu);
+  color: var(--teks);
+  border: 2px solid var(--aksen);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  line-height: 1.5;
+  transition: background 0.15s, color 0.15s;
+  width: 100%;
+}
+
+.btn-pilihan:hover, .btn-pilihan:focus {
+  background: var(--aksen);
+  color: #fff;
+  outline: none;
+}
+
+.btn-pilihan:focus-visible {
+  outline: 3px solid var(--aksen-terang);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   12. Layar akhir
+   ============================================================ */
+.layar-akhir {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.akhir-label-jenis {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.akhir-label-jenis.kanon {
+  background: #d4edda;
+  color: #155724;
+}
+
+.akhir-label-jenis.alternatif {
+  background: #fff3cd;
+  color: #664d03;
+}
+
+.akhir-judul {
+  font-size: 1.5rem;
+  color: var(--aksen);
+  margin-bottom: 0.75rem;
+}
+
+.akhir-label-alternatif {
+  font-style: italic;
+  color: var(--teks-redup);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.akhir-teks {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.skor-blok {
+  background: var(--bg-kartu);
+  border: 1px solid var(--batas);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.skor-blok h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--aksen);
+}
+
+.skor-daftar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skor-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.skor-nama {
+  width: 7rem;
+  font-weight: bold;
+  color: var(--teks-redup);
+}
+
+.skor-bar-luar {
+  flex: 1;
+  height: 10px;
+  background: var(--batas);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skor-bar-dalam {
+  height: 100%;
+  background: var(--aksen);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+.skor-angka {
+  width: 2.5rem;
+  text-align: right;
+  color: var(--teks);
+}
+
+.riwayat-blok {
+  margin-bottom: 1.5rem;
+}
+
+.riwayat-blok h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--aksen);
+}
+
+.riwayat-daftar {
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--teks-redup);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.riwayat-item::before {
+  content: "→ ";
+  color: var(--aksen);
+}
+
+.akhir-ditemukan-info {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--teks-redup);
+  margin-bottom: 1.25rem;
+}
+
+.tombol-akhir {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.btn-aksi-utama {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: bold;
+  background: var(--aksen);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-aksi-utama:hover, .btn-aksi-utama:focus {
+  background: var(--aksen-terang);
+  outline: none;
+}
+
+.btn-aksi-utama:focus-visible {
+  outline: 2px solid var(--aksen-terang);
+  outline-offset: 2px;
+}
+
+.btn-aksi-sekunder {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  background: transparent;
+  color: var(--aksen);
+  border: 2px solid var(--aksen);
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-aksi-sekunder:hover, .btn-aksi-sekunder:focus {
+  background: var(--aksen);
+  color: #fff;
+  outline: none;
+}
+
+.btn-aksi-sekunder:focus-visible {
+  outline: 2px solid var(--aksen-terang);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   13. Pesan error ramah
+   ============================================================ */
+.pesan-error {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #664d03;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.pesan-muat {
+  color: var(--teks-redup);
+  font-style: italic;
+}
+
+/* ============================================================
+   14. Footer
+   ============================================================ */
+footer {
+  background: var(--latar);
+  border-top: 1px solid var(--batas);
+  padding: 0.75rem var(--jarak);
+  font-size: 0.8rem;
+  color: var(--teks-redup);
+  font-family: var(--font-sans);
+  text-align: center;
+}
+
+footer a {
+  color: var(--teks-redup);
+}
+
+/* ============================================================
+   15. Responsif: tablet ke atas (≥ 600 px)
+   ============================================================ */
+@media (min-width: 600px) {
+  .daftar-kartu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .btn-pilihan {
+    font-size: 1.05rem;
+  }
+}
+
+/* ============================================================
+   16. Responsif: desktop (≥ 900 px)
+   ============================================================ */
+@media (min-width: 900px) {
+  .daftar-kartu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ilustrasi-suasana {
+    max-width: 28rem;
+  }
+
+  .adegan-teks {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================================================
+   17. Mode laut-badai: teks lebih terang karena latar gelap
+   ============================================================ */
+body.suasana-laut-badai #adegan,
+body.suasana-laut-badai #pilihan {
+  color: var(--teks-suasana, var(--teks));
+}
+
+body.suasana-laut-badai .btn-pilihan {
+  background: rgba(255,255,255,0.08);
+  color: #e8f4f8;
+  border-color: #6aaed4;
+}
+
+body.suasana-laut-badai .btn-pilihan:hover,
+body.suasana-laut-badai .btn-pilihan:focus {
+  background: #6aaed4;
+  color: #001a28;
+}

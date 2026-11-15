@@ -1,0 +1,163 @@
+{
+  "id": "malin-kundang",
+  "judul": "Malin Kundang",
+  "asal": "Sumatra Barat",
+  "pengantar": "Anak durhaka yang menolak ibunya — dan kutukan yang mengubahnya menjadi batu di Pantai Air Manis.",
+  "pesanMoral": "Berbaktilah kepada orang tua, terutama ibu; kesombongan dan lupa asal-usul berujung penyesalan.",
+  "sumber": [
+    { "nama": "Wikipedia (EN) — Malin Kundang", "url": "https://en.wikipedia.org/wiki/Malin_Kundang" },
+    { "nama": "Haibunda — Cerita Dongeng Malin Kundang dan Pesan Moralnya", "url": "https://www.haibunda.com/parenting/20230102130946-61-294034/cerita-lengkap-dongeng-malin-kundang-dan-pesan-moralnya-untuk-ajari-anak-berbakti/amp" }
+  ],
+  "variasiDipakai": "Versi umum: ibu bernama Mande Rubayah; Malin merantau dengan kapal, sukses menjadi saudagar kaya, menikah, pulang dengan kapal mewah, menolak dan mendorong ibunya hingga jatuh, ibu berdoa bila benar itu anaknya maka kutuklah jadi batu, badai dan petir menghantam kapal, Malin menjadi batu bersujud di Pantai Air Manis.",
+  "mulaiDari": "malin:01",
+  "adegan": [
+    {
+      "id": "malin:01",
+      "suasana": "pantai",
+      "teks": "Di Pantai Air Manis, Padang, hiduplah janda miskin Mande Rubayah bersama anak semata wayangnya, Malin Kundang. Setiap hari mereka berjuang melawan kemiskinan. Suatu pagi, sebuah kapal dagang besar berlabuh di dermaga. Kapten kapal menawarkan pekerjaan kepada pemuda-pemuda desa. Malin menatap kapal itu, hatinya berdebar. Ini kesempatan mengubah nasib — tapi ibunya sudah tua dan sakit-sakitan.",
+      "pilihan": [
+        { "teks": "Memohon izin ibu untuk merantau mencari peruntungan.", "ke": "malin:02", "skor": { "berani": 1 } },
+        { "teks": "Memutuskan tetap di desa menemani ibu yang sudah tua.", "ke": "malin:02b", "skor": { "bakti": 2 } }
+      ]
+    },
+    {
+      "id": "malin:02",
+      "suasana": "pantai",
+      "teks": "Mande Rubayah meneteskan air mata mendengar permintaan Malin. Hatinya hancur, namun ia tahu anaknya butuh masa depan yang lebih baik. 'Pergilah, Nak. Tapi ingatlah selalu dari mana kau berasal,' bisiknya sambil memeluk Malin erat-erat. Malin berjanji akan pulang dan menjemput ibunya hidup dalam kemewahan. Kapal perlahan meninggalkan dermaga. Mande Rubayah melambaikan tangan, air mata mengalir di pipinya.",
+      "pilihan": [
+        { "teks": "Memeluk ibu dengan hangat dan berjanji sungguh-sungguh untuk kembali.", "ke": "malin:03", "skor": { "bakti": 2 } },
+        { "teks": "Berpamitan singkat — hati sudah dipenuhi bayangan petualangan di luar sana.", "ke": "malin:03", "skor": { "berani": 1 } }
+      ]
+    },
+    {
+      "id": "malin:02b",
+      "suasana": "desa",
+      "teks": "Malin memilih tinggal. Berbulan-bulan ia membantu ibunya, namun kemiskinan terus menghimpit. Suatu malam, Mande Rubayah sendiri yang mendorongnya pergi. 'Ibu tidak ingin kau seumur hidup menanggung kesusahan ini. Pergilah, Nak, raihlah mimpimu.' Malin tertegun — ibunya rela melepasnya demi kebahagiaannya. Dengan berat hati namun penuh tekad, ia akhirnya naik ke kapal berikutnya yang singgah di dermaga.",
+      "pilihan": [
+        { "teks": "Berangkat dengan janji akan segera pulang membawa kabar baik.", "ke": "malin:04", "skor": { "bakti": 2 } },
+        { "teks": "Berangkat dengan tekad bulat membangun kehidupan baru.", "ke": "malin:04", "skor": { "berani": 1 } }
+      ]
+    },
+    {
+      "id": "malin:03",
+      "suasana": "laut-badai",
+      "teks": "Kapal berlayar jauh melintasi Samudra Hindia. Badai pertama menguji keberanian Malin — ombak setinggi pohon kelapa mengguncang kapal tanpa henti. Malin berpegangan pada tiang layar, giginya gemeretak, namun ia tak menyerah. Kapten, melihat keberanian Malin, mulai mengajarinya berdagang dan membaca peta. Bertahun-tahun berlalu. Malin belajar keras, bekerja lebih keras, dan namanya mulai dikenal di pelabuhan-pelabuhan.",
+      "pilihan": [
+        { "teks": "Fokus belajar berdagang dan menabung dengan tekun.", "ke": "malin:04", "skor": { "bijak": 2 } },
+        { "teks": "Mengambil risiko besar dalam perdagangan untuk cepat kaya.", "ke": "malin:04", "skor": { "berani": 2 } }
+      ]
+    },
+    {
+      "id": "malin:04",
+      "suasana": "desa",
+      "teks": "Bertahun-tahun merantau membuahkan hasil. Malin kini memiliki gudang di tiga pelabuhan dan puluhan anak buah yang setia. Ia bertemu seorang putri bangsawan dari kota besar dan menikah dalam pesta mewah. Istrinya cantik, berpakaian indah, terbiasa dengan kemewahan. Malin mencintainya, namun perlahan ia mulai sungkan bila orang membicarakan kampung halamannya yang miskin. Bayangan wajah ibunya kadang muncul di malam sepi.",
+      "pilihan": [
+        { "teks": "Segera mengirim surat dan uang untuk Mande Rubayah di kampung.", "ke": "malin:05", "skor": { "bakti": 2 } },
+        { "teks": "Menunda — terlalu sibuk mengurus bisnis yang terus berkembang.", "ke": "malin:05b", "skor": { "bijak": 0 } }
+      ]
+    },
+    {
+      "id": "malin:05",
+      "suasana": "istana",
+      "teks": "Kabar tentang Malin yang kaya raya menyebar ke seluruh penjuru. Istrinya bangga memamerkan kemewahan mereka kepada tamu-tamu agung. Di balik senyumnya, Malin masih menyimpan rindu pada ibunya. Suatu hari, ia mengusulkan kepada istrinya untuk pulang ke kampung halaman. Istrinya mengernyit — kampung nelayan miskin bukanlah tujuan wisata yang ia bayangkan. Namun Malin bersikeras: sudah terlalu lama ia tidak pulang.",
+      "pilihan": [
+        { "teks": "Pulang sekarang juga dengan kapal mewah, jemput ibu hidup di kota.", "ke": "malin:06", "skor": { "bakti": 2 } },
+        { "teks": "Menunda lagi — tunggu waktu yang lebih tepat, mungkin setelah musim dagang.", "ke": "malin:06b", "skor": { "bakti": 0 } }
+      ]
+    },
+    {
+      "id": "malin:05b",
+      "suasana": "istana",
+      "teks": "Tahun demi tahun berlalu tanpa surat, tanpa kabar. Malin semakin tenggelam dalam kesibukan dan kemewahan. Istrinya yang angkuh membentuk cara pandangnya — asal-usul yang miskin adalah sesuatu yang memalukan, bukan dibanggakan. Namanya kini besar, hartanya berlimpah, namun hatinya semakin jauh dari desa nelayan di Pantai Air Manis. Sampai suatu hari, awak kapalnya mengabarkan bahwa kapal mewah mereka siap berlayar ke selatan.",
+      "pilihan": [
+        { "teks": "Memutuskan singgah ke kampung halaman dalam perjalanan dagang.", "ke": "malin:06", "skor": { "bakti": 1 } },
+        { "teks": "Melewatkan kampung halaman — tidak ada urusan dagang di sana.", "ke": "malin:06b", "skor": { "bakti": 0 } }
+      ]
+    },
+    {
+      "id": "malin:06",
+      "suasana": "pantai",
+      "teks": "Kapal mewah berlayar menuju Pantai Air Manis. Malin berdiri di haluan, angin laut mengacak-acak rambutnya. Perasaan aneh bercampur aduk di dadanya — rindu, bangga, tapi juga takut. Takut apa? Ia sendiri tidak tahu. Dermaga kampung halamannya terlihat di kejauhan, kecil dan lusuh dibandingkan pelabuhan-pelabuhan besar yang biasa ia singgahi. Istri dan para awaknya berkerumun di buritan, berbisik-bisik.",
+      "pilihan": [
+        { "teks": "Memerintahkan kapal berlabuh di dermaga kampung halaman.", "ke": "malin:07", "skor": { "bakti": 1 } },
+        { "teks": "Melewati dermaga tanpa berlabuh — malu dilihat orang kampung.", "ke": "malin:08", "skor": { "bakti": 0 } }
+      ]
+    },
+    {
+      "id": "malin:06b",
+      "suasana": "desa",
+      "teks": "Kapal melaju jauh melewati garis pantai Sumatra tanpa singgah. Di Pantai Air Manis, Mande Rubayah yang tua dan lemah masih setiap hari duduk di dermaga, menunggu. Ia mendengar desas-desus ada kapal mewah milik saudagar kaya bernama Malin Kundang yang berlayar di perairan ini. Hatinya bergetar. Ia berdiri tertatih-tatih, melambaikan tangan ke kapal yang semakin mengecil di cakrawala — namun kapal itu terus berlayar.",
+      "pilihan": [
+        { "teks": "Kapal akhirnya berbalik — Malin memerintahkan putar haluan ke kampung.", "ke": "malin:07", "skor": { "bakti": 1 } },
+        { "teks": "Kapal tidak kembali. Suatu hari ia berlabuh di kota lain, lalu terpaksa kembali ke Air Manis karena badai mendekat.", "ke": "malin:07", "skor": { "bakti": 0 } }
+      ]
+    },
+    {
+      "id": "malin:07",
+      "suasana": "pantai",
+      "teks": "Kapal berlabuh. Penduduk desa berkerumun menyaksikan kemewahan yang belum pernah mereka lihat. Tiba-tiba terdengar suara lemah dari kerumunan: 'Malin... Malin Kundang, anakku!' Seorang wanita tua berbaju lusuh, rambut putih, kulit keriput, berusaha menerobos kerumunan. Tubuhnya gemetar, air mata mengalir bebas di wajahnya. Mande Rubayah. Istri Malin mencengkeram lengannya dan berbisik, 'Siapa wanita tua itu?'",
+      "pilihan": [
+        { "teks": "Turun dan memeluk ibu di depan semua orang — aku tidak malu.", "ke": "malin:09b", "skor": { "bakti": 3 } },
+        { "teks": "Berpura-pura tidak mengenal wanita tua itu demi menjaga gengsi di depan istri.", "ke": "malin:08", "skor": { "bakti": 0 } }
+      ]
+    },
+    {
+      "id": "malin:08",
+      "suasana": "pantai",
+      "teks": "Malin mengeraskan hati. 'Aku tidak kenal wanita tua itu,' ucapnya keras agar semua awak kapal mendengar. Mande Rubayah tertegun — ia tak percaya telinganya. 'Malin, ini Ibu! Sudah bertahun-tahun Ibu menunggumu!' Namun Malin melangkah maju dan mendorong ibunya hingga tersungkur ke tanah. 'Pergi! Jangan persulit aku di sini!' Tubuh tua itu jatuh di pasir. Keheningan mencekam. Langit yang tadi cerah tiba-tiba berubah mendung pekat.",
+      "pilihan": [
+        { "teks": "Menyesal — berlutut dan meminta maaf kepada ibu di tengah kerumunan.", "ke": "malin:09", "skor": { "bakti": 2 } },
+        { "teks": "Membalikkan badan dan kembali ke kapal, mengabaikan ibu yang menangis.", "ke": "malin:10", "skor": { "bakti": 0 } }
+      ]
+    },
+    {
+      "id": "malin:09",
+      "suasana": "laut-badai",
+      "teks": "Malin berlutut di pasir, air matanya jatuh. 'Ibu, maafkan aku,' bisiknya. Namun Mande Rubayah menggeleng perlahan, luka di hatinya sudah terlalu dalam. Ia mendongak ke langit dan berdoa dengan suara bergetar: 'Ya Allah, bila benar ia anakku, dan ia telah durhaka padaku, kutuklah ia menjadi batu.' Angin tiba-tiba kencang. Petir menyambar langit. Ombak raksasa menghantam kapal. Malin berlari ke dermaga — namun tubuhnya terasa semakin berat.",
+      "pilihan": [
+        { "teks": "Terus berlari, berteriak memanggil ibu dengan segala penyesalan.", "ke": "akhir-batu", "skor": { "bakti": 1 } },
+        { "teks": "Berhenti dan menerima kutukan — ini hukuman yang setimpal.", "ke": "akhir-batu", "skor": { "bijak": 1 } }
+      ]
+    },
+    {
+      "id": "malin:09b",
+      "suasana": "pantai",
+      "teks": "Malin melompat turun dari kapal dan memeluk ibunya erat-erat. 'Ibu, maafkan aku sudah lama pergi tanpa kabar,' suaranya pecah. Mande Rubayah menangis dalam pelukan anaknya — tangisan bahagia yang bertahun-tahun ia tahan. Istri Malin terpaku di geladak. Para awak menunduk terharu. Mande Rubayah menggenggam wajah anaknya, 'Kau pulang, Nak. Ibu tidak butuh emas atau kapal mewah. Ibu hanya butuh kau.'",
+      "pilihan": [
+        { "teks": "Membawa ibu naik ke kapal dan mengajaknya tinggal di kota.", "ke": "akhir-maaf", "skor": { "bakti": 3 } },
+        { "teks": "Memutuskan pindah kembali ke desa, hidup dekat ibu.", "ke": "akhir-maaf", "skor": { "bakti": 3, "bijak": 1 } }
+      ]
+    },
+    {
+      "id": "malin:10",
+      "suasana": "laut-badai",
+      "teks": "Malin kembali ke kapal dan memerintahkan segera berlayar. Di darat, Mande Rubayah bersimpuh di pasir, hatinya hancur berkeping-keping. Dengan suara yang dalam dan sunyi, ia mendongak ke langit dan berdoa: 'Ya Allah, bila benar pemuda itu anakku, dan ia telah begitu durhaka, jadikanlah ia batu.' Langit seketika menggelap. Petir bersahut-sahutan. Ombak setinggi puluhan kaki mengguncang kapal Malin.",
+      "pilihan": [
+        { "teks": "Malin mencoba berbalik ke daratan, berteriak menyesali perbuatannya.", "ke": "akhir-batu", "skor": { "bakti": 1 } },
+        { "teks": "Malin memerintahkan mendayung lebih keras — melawan badai.", "ke": "akhir-batu", "skor": { "berani": 1 } }
+      ]
+    }
+  ],
+  "akhir": [
+    {
+      "id": "akhir-batu",
+      "jenis": "kanon",
+      "judul": "Batu yang Bersujud",
+      "teks": "Badai semakin kencang. Petir menyambar tiang kapal. Malin merasakan tubuhnya mengeras — jari-jarinya, kakinya, dadanya — semua berubah menjadi batu satu per satu. Kapal karam di tengah lautan. Keesokan paginya, langit kembali cerah. Warga desa menemukan sebuah batu besar di tepi Pantai Air Manis — berbentuk manusia yang bersujud, seolah memohon ampun. Itulah Malin Kundang, anak durhaka yang dikutuk oleh doa ibunya sendiri. Batu itu masih ada hingga hari ini."
+    },
+    {
+      "id": "akhir-maaf",
+      "jenis": "alternatif",
+      "judul": "Maaf yang Menyembuhkan",
+      "labelAlternatif": "Seandainya Malin mengakui ibunya di dermaga…",
+      "teks": "Mande Rubayah menghabiskan sisa hidupnya dalam kehangatan keluarga. Malin membawa ibunya ke kota, memberikan rumah yang nyaman, dan tak sehari pun ia lewatkan tanpa mengunjunginya. Istri Malin yang awalnya keberatan, perlahan belajar mencintai ibu mertuanya. Kapal-kapal Malin tetap berlayar, hartanya tetap bertambah — namun kini ia tahu bahwa harta terbesar yang pernah ia miliki adalah ibunya yang masih hidup dan memaafkannya."
+    },
+    {
+      "id": "akhir-pulang",
+      "jenis": "alternatif",
+      "judul": "Pulang Sebelum Terlambat",
+      "labelAlternatif": "Seandainya Malin pulang sebelum kesombongan menguasainya…",
+      "teks": "Malin tiba di kampungnya lebih awal, sebelum kemewahan mengubah hatinya. Ia menemukan ibunya masih menunggu di dermaga yang sama, setiap sore, seperti dulu. Air matanya jatuh melihat tubuh tua yang semakin ringkih itu. Ia melompat turun bahkan sebelum kapal berlabuh sempurna. Mande Rubayah memeluknya erat. Tidak ada kutukan, tidak ada badai. Hanya pelukan ibu dan anak yang terpisah terlalu lama — dan janji Malin untuk tidak pernah pergi sejauh itu lagi tanpa membawa ibunya."
+    }
+  ]
+}
